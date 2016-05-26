@@ -6,9 +6,11 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "WLPresenter.h"
+
+#import <WeatherLeakView/WeatherLeakView.h>
 
 
-@interface WLWeatherPresenter : NSObject
+@interface WLWeatherPresenter : WLPresenter<WLWeatherInput>
 
 @end

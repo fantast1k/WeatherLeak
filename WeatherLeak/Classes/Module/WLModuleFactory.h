@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import "WLWeatherWireframe.h"
 
-@class WLWireframe;
 
 @interface WLModuleFactory : NSObject
 
-+ (WLWireframe *)weatherWireframe;
++ (WLWeatherWireframe *)weatherWireframe;
 
 @end

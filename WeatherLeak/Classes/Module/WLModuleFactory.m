@@ -7,14 +7,35 @@
 //
 
 #import "WLModuleFactory.h"
-#import "WLWireframe.h"
+#import "WLWireframeProtected.h"
+#import "WLPresenterProtected.h"
+#import "WLInteractorProtected.h"
+// Presenters
+#import "WLWeatherPresenter.h"
+// Interactors
+#import "WLWeatherInteractor.h"
+
+#import <WeatherLeakView/WeatherLeakView.h>
 
 
 @implementation WLModuleFactory
 
-+ (WLWireframe *)weatherWireframe
++ (WLWeatherWireframe *)weatherWireframe
 {
-    
+    WLWeatherInteractor *interactor = [[WLWeatherInteractor alloc] init];
+    WLWeatherPresenter *presenter = [[WLWeatherPresenter alloc] init];
+    WLWeatherWireframe *wireframe = [[WLWeatherWireframe alloc] init];
+
+    UIViewController<WLWeatherOutput> *viewController = [WLViewControllerFactory weatherViewControllerWithInput:presenter];
+
+    presenter.wireframe = wireframe;
+    presenter.interactor = interactor;
+
+    wireframe.viewController = viewController;
+
+    interactor.presenter = presenter;
+
+    return wireframe;
 }
 
 @end

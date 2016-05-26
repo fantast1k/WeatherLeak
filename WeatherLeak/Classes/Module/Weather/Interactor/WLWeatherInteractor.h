@@ -6,9 +6,9 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "WLInteractor.h"
 
 
-@interface WLWeatherInteractor : NSObject
+@interface WLWeatherInteractor : WLInteractor
 
 @end

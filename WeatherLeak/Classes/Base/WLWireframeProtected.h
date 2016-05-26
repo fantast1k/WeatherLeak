@@ -6,7 +6,7 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#import "WLWireframe.h
+#import "WLWireframe.h"
 
 
 @interface WLWireframe()
