@@ -25,6 +25,10 @@
 		1225C5EA1CF7B06100280F76 /* WLWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5E91CF7B06100280F76 /* WLWireframe.m */; };
 		1225C5EE1CF7B10500280F76 /* WLPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5ED1CF7B10500280F76 /* WLPresenter.m */; };
 		1225C5F21CF7B19F00280F76 /* WLInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5F11CF7B19F00280F76 /* WLInteractor.m */; };
+		1225C5F61CF7B30000280F76 /* WLWeatherWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5F51CF7B30000280F76 /* WLWeatherWireframe.m */; };
+		1225C5F91CF7B30B00280F76 /* WLWeatherInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5F81CF7B30B00280F76 /* WLWeatherInteractor.m */; };
+		1225C5FC1CF7B31800280F76 /* WLWeatherPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5FB1CF7B31800280F76 /* WLWeatherPresenter.m */; };
+		1225C5FF1CF7B32500280F76 /* WLModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5FE1CF7B32500280F76 /* WLModuleFactory.m */; };
 		96487FBB92C070C64F95DC15 /* libPods-WeatherLeakView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,14 @@
 		1225C5F01CF7B19F00280F76 /* WLInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLInteractor.h; sourceTree = "<group>"; };
 		1225C5F11CF7B19F00280F76 /* WLInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLInteractor.m; sourceTree = "<group>"; };
 		1225C5F31CF7B1AE00280F76 /* WLInteractorProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLInteractorProtected.h; sourceTree = "<group>"; };
+		1225C5F41CF7B30000280F76 /* WLWeatherWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWeatherWireframe.h; sourceTree = "<group>"; };
+		1225C5F51CF7B30000280F76 /* WLWeatherWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWeatherWireframe.m; sourceTree = "<group>"; };
+		1225C5F71CF7B30B00280F76 /* WLWeatherInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWeatherInteractor.h; sourceTree = "<group>"; };
+		1225C5F81CF7B30B00280F76 /* WLWeatherInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWeatherInteractor.m; sourceTree = "<group>"; };
+		1225C5FA1CF7B31800280F76 /* WLWeatherPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWeatherPresenter.h; sourceTree = "<group>"; };
+		1225C5FB1CF7B31800280F76 /* WLWeatherPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWeatherPresenter.m; sourceTree = "<group>"; };
+		1225C5FD1CF7B32500280F76 /* WLModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLModuleFactory.h; sourceTree = "<group>"; };
+		1225C5FE1CF7B32500280F76 /* WLModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLModuleFactory.m; sourceTree = "<group>"; };
 		30E3D29F5F4D9ECBAD1DF60D /* Pods-WeatherLeakView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakView/Pods-WeatherLeakView.debug.xcconfig"; sourceTree = "<group>"; };
 		D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherLeakView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -229,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				1225C5E31CF7AFA000280F76 /* Weather */,
+				1225C5FD1CF7B32500280F76 /* WLModuleFactory.h */,
+				1225C5FE1CF7B32500280F76 /* WLModuleFactory.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -246,6 +260,8 @@
 		1225C5E41CF7AFA000280F76 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				1225C5F71CF7B30B00280F76 /* WLWeatherInteractor.h */,
+				1225C5F81CF7B30B00280F76 /* WLWeatherInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -253,6 +269,8 @@
 		1225C5E51CF7AFA000280F76 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1225C5FA1CF7B31800280F76 /* WLWeatherPresenter.h */,
+				1225C5FB1CF7B31800280F76 /* WLWeatherPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -260,6 +278,8 @@
 		1225C5E61CF7AFB100280F76 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				1225C5F41CF7B30000280F76 /* WLWeatherWireframe.h */,
+				1225C5F51CF7B30000280F76 /* WLWeatherWireframe.m */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -449,10 +469,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1225C5FF1CF7B32500280F76 /* WLModuleFactory.m in Sources */,
 				1225C5B21CF7907E00280F76 /* main.m in Sources */,
 				1225C5EA1CF7B06100280F76 /* WLWireframe.m in Sources */,
+				1225C5FC1CF7B31800280F76 /* WLWeatherPresenter.m in Sources */,
 				1225C5F21CF7B19F00280F76 /* WLInteractor.m in Sources */,
 				1225C5B01CF7907E00280F76 /* AppDelegate.m in Sources */,
+				1225C5F91CF7B30B00280F76 /* WLWeatherInteractor.m in Sources */,
+				1225C5F61CF7B30000280F76 /* WLWeatherWireframe.m in Sources */,
 				1225C5EE1CF7B10500280F76 /* WLPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
