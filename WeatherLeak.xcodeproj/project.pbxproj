@@ -22,6 +22,9 @@
 		1225C5DE1CF7A0A100280F76 /* WLWeatherVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5DC1CF7A0A100280F76 /* WLWeatherVC.h */; };
 		1225C5DF1CF7A0A100280F76 /* WLWeatherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5DD1CF7A0A100280F76 /* WLWeatherVC.m */; };
 		1225C5E11CF7AC6200280F76 /* WLWeatherIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5E01CF7A0D300280F76 /* WLWeatherIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1225C5EA1CF7B06100280F76 /* WLWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5E91CF7B06100280F76 /* WLWireframe.m */; };
+		1225C5EE1CF7B10500280F76 /* WLPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5ED1CF7B10500280F76 /* WLPresenter.m */; };
+		1225C5F21CF7B19F00280F76 /* WLInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5F11CF7B19F00280F76 /* WLInteractor.m */; };
 		96487FBB92C070C64F95DC15 /* libPods-WeatherLeakView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,15 @@
 		1225C5DC1CF7A0A100280F76 /* WLWeatherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWeatherVC.h; sourceTree = "<group>"; };
 		1225C5DD1CF7A0A100280F76 /* WLWeatherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWeatherVC.m; sourceTree = "<group>"; };
 		1225C5E01CF7A0D300280F76 /* WLWeatherIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLWeatherIO.h; sourceTree = "<group>"; };
+		1225C5E81CF7B06100280F76 /* WLWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWireframe.h; sourceTree = "<group>"; };
+		1225C5E91CF7B06100280F76 /* WLWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWireframe.m; sourceTree = "<group>"; };
+		1225C5EB1CF7B0B600280F76 /* WLWireframeProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLWireframeProtected.h; sourceTree = "<group>"; };
+		1225C5EC1CF7B10500280F76 /* WLPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPresenter.h; sourceTree = "<group>"; };
+		1225C5ED1CF7B10500280F76 /* WLPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPresenter.m; sourceTree = "<group>"; };
+		1225C5EF1CF7B18000280F76 /* WLPresenterProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLPresenterProtected.h; sourceTree = "<group>"; };
+		1225C5F01CF7B19F00280F76 /* WLInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLInteractor.h; sourceTree = "<group>"; };
+		1225C5F11CF7B19F00280F76 /* WLInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLInteractor.m; sourceTree = "<group>"; };
+		1225C5F31CF7B1AE00280F76 /* WLInteractorProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLInteractorProtected.h; sourceTree = "<group>"; };
 		30E3D29F5F4D9ECBAD1DF60D /* Pods-WeatherLeakView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakView/Pods-WeatherLeakView.debug.xcconfig"; sourceTree = "<group>"; };
 		D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherLeakView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +137,8 @@
 		1225C5A91CF7907E00280F76 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1225C5E71CF7AFD400280F76 /* Base */,
+				1225C5E21CF7AFA000280F76 /* Module */,
 				1225C5AA1CF7907E00280F76 /* AppDelegate */,
 			);
 			path = Classes;
@@ -209,6 +223,61 @@
 				1225C5C81CF7913000280F76 /* Main.storyboard */,
 			);
 			path = Interface;
+			sourceTree = "<group>";
+		};
+		1225C5E21CF7AFA000280F76 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1225C5E31CF7AFA000280F76 /* Weather */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1225C5E31CF7AFA000280F76 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1225C5E61CF7AFB100280F76 /* Wireframe */,
+				1225C5E41CF7AFA000280F76 /* Interactor */,
+				1225C5E51CF7AFA000280F76 /* Presenter */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		1225C5E41CF7AFA000280F76 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1225C5E51CF7AFA000280F76 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1225C5E61CF7AFB100280F76 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		1225C5E71CF7AFD400280F76 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1225C5E81CF7B06100280F76 /* WLWireframe.h */,
+				1225C5E91CF7B06100280F76 /* WLWireframe.m */,
+				1225C5EB1CF7B0B600280F76 /* WLWireframeProtected.h */,
+				1225C5EC1CF7B10500280F76 /* WLPresenter.h */,
+				1225C5ED1CF7B10500280F76 /* WLPresenter.m */,
+				1225C5EF1CF7B18000280F76 /* WLPresenterProtected.h */,
+				1225C5F01CF7B19F00280F76 /* WLInteractor.h */,
+				1225C5F11CF7B19F00280F76 /* WLInteractor.m */,
+				1225C5F31CF7B1AE00280F76 /* WLInteractorProtected.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		569C99C8DD5ACC95B6677275 /* Pods */ = {
@@ -381,7 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1225C5B21CF7907E00280F76 /* main.m in Sources */,
+				1225C5EA1CF7B06100280F76 /* WLWireframe.m in Sources */,
+				1225C5F21CF7B19F00280F76 /* WLInteractor.m in Sources */,
 				1225C5B01CF7907E00280F76 /* AppDelegate.m in Sources */,
+				1225C5EE1CF7B10500280F76 /* WLPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
