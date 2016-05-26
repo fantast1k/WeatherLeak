@@ -4,3 +4,6 @@ target 'WeatherLeak' do
 
 end
 
+target 'WeatherLeakView' do
+    pod 'Masonry'
+end

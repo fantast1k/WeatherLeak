@@ -1,0 +1,37 @@
+//
+//  WLCitiesListVC.m
+//  WeatherLeak
+//
+//  Created by Dmitry Fa[n]tastik on 26/05/2016.
+//  Copyright © 2016 Fantastik Solution. All rights reserved.
+//
+
+#import "WLCitiesListVC.h"
+
+@interface WLCitiesListVC ()
+
+@end
+
+@implementation WLCitiesListVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
