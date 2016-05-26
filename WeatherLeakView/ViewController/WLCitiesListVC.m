@@ -8,30 +8,45 @@
 
 #import "WLCitiesListVC.h"
 
+#import <Masonry/Masonry.h>
+
+
 @interface WLCitiesListVC ()
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
 @implementation WLCitiesListVC
 
-- (void)viewDidLoad {
+#pragma mark - View Life Cycle
+
+- (void)viewDidLoad
+{
+    [self setup];
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Setup
+
+- (void)setup
+{
+    [self setupTableView];
 }
 
-/*
-#pragma mark - Navigation
+- (void)setupTableView
+{
+    UITableView *tv = [[UITableView alloc] init];
+    tv.translatesAutoresizingMaskIntoConstraints = NO;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.view addSubview:tv];
+
+    [tv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+
+    self.tableView = tv;
 }
-*/
+
 
 @end

@@ -6,8 +6,13 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "WLCitiesListIO.h"
+
 
 @interface WLViewControllerFactory : NSObject
+
++ (UIViewController<WLCitiesListOutput> *)citiesViewControllerWithInput:(id<WLCitiesListInput>)input;
 
 @end
