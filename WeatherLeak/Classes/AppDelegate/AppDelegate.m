@@ -21,7 +21,7 @@
     UIViewController *vc = [WLViewControllerFactory citiesViewControllerWithInput:[NSObject new]];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 
     return YES;

@@ -9,6 +9,7 @@
 #import "WLViewControllerFactory.h"
 
 #import "WLCitiesListVC.h"
+#import "WLWeatherVC.h"
 
 @implementation WLViewControllerFactory
 
@@ -17,6 +18,15 @@
     assert(input);
 
     WLCitiesListVC *vc = [[WLCitiesListVC alloc] init];
+    vc.input = input;
+    return vc;
+}
+
++ (UIViewController<WLWeatherOutput> *)weatherViewControllerWithInput:(id<WLWeatherInput>)input
+{
+    assert(input);
+
+    WLWeatherVC *vc = [[WLWeatherVC alloc] init];
     vc.input = input;
     return vc;
 }

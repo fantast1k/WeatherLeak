@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "WLCitiesListIO.h"
+#import "WLWeatherIO.h"
 
 
 @interface WLViewControllerFactory : NSObject
 
 + (UIViewController<WLCitiesListOutput> *)citiesViewControllerWithInput:(id<WLCitiesListInput>)input;
++ (UIViewController<WLWeatherOutput> *)weatherViewControllerWithInput:(id<WLWeatherInput>)input;
 
 @end

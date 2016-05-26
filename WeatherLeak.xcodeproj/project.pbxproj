@@ -19,6 +19,9 @@
 		1225C5D71CF7960600280F76 /* WLViewControllerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5D51CF7960600280F76 /* WLViewControllerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1225C5D81CF7960600280F76 /* WLViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5D61CF7960600280F76 /* WLViewControllerFactory.m */; };
 		1225C5D91CF7962D00280F76 /* WLCitiesListIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5D41CF795C200280F76 /* WLCitiesListIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1225C5DE1CF7A0A100280F76 /* WLWeatherVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5DC1CF7A0A100280F76 /* WLWeatherVC.h */; };
+		1225C5DF1CF7A0A100280F76 /* WLWeatherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5DD1CF7A0A100280F76 /* WLWeatherVC.m */; };
+		1225C5E11CF7AC6200280F76 /* WLWeatherIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5E01CF7A0D300280F76 /* WLWeatherIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96487FBB92C070C64F95DC15 /* libPods-WeatherLeakView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		1225C5D41CF795C200280F76 /* WLCitiesListIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCitiesListIO.h; sourceTree = "<group>"; };
 		1225C5D51CF7960600280F76 /* WLViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLViewControllerFactory.h; sourceTree = "<group>"; };
 		1225C5D61CF7960600280F76 /* WLViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLViewControllerFactory.m; sourceTree = "<group>"; };
+		1225C5DC1CF7A0A100280F76 /* WLWeatherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWeatherVC.h; sourceTree = "<group>"; };
+		1225C5DD1CF7A0A100280F76 /* WLWeatherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWeatherVC.m; sourceTree = "<group>"; };
+		1225C5E01CF7A0D300280F76 /* WLWeatherIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLWeatherIO.h; sourceTree = "<group>"; };
 		30E3D29F5F4D9ECBAD1DF60D /* Pods-WeatherLeakView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakView/Pods-WeatherLeakView.debug.xcconfig"; sourceTree = "<group>"; };
 		D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherLeakView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +188,9 @@
 				1225C5D01CF795AC00280F76 /* WLCitiesListVC.h */,
 				1225C5D11CF795AC00280F76 /* WLCitiesListVC.m */,
 				1225C5D41CF795C200280F76 /* WLCitiesListIO.h */,
+				1225C5DC1CF7A0A100280F76 /* WLWeatherVC.h */,
+				1225C5DD1CF7A0A100280F76 /* WLWeatherVC.m */,
+				1225C5E01CF7A0D300280F76 /* WLWeatherIO.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -229,6 +238,8 @@
 				1225C5D71CF7960600280F76 /* WLViewControllerFactory.h in Headers */,
 				1225C5C41CF7908600280F76 /* WeatherLeakView.h in Headers */,
 				1225C5D91CF7962D00280F76 /* WLCitiesListIO.h in Headers */,
+				1225C5DE1CF7A0A100280F76 /* WLWeatherVC.h in Headers */,
+				1225C5E11CF7AC6200280F76 /* WLWeatherIO.h in Headers */,
 				1225C5D21CF795AC00280F76 /* WLCitiesListVC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1225C5D81CF7960600280F76 /* WLViewControllerFactory.m in Sources */,
+				1225C5DF1CF7A0A100280F76 /* WLWeatherVC.m in Sources */,
 				1225C5D31CF795AC00280F76 /* WLCitiesListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
