@@ -10,4 +10,13 @@
 
 @implementation WLCityModel
 
+- (instancetype)initWithLat:(double)lat lon:(double)lon
+{
+    if (self = [super init]) {
+        _latitude = lat;
+        _longitude = lon;
+    }
+    return self;
+}
+
 @end
