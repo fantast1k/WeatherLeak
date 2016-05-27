@@ -8,7 +8,6 @@
 
 #import "WLOpenWeatherMapClient.h"
 #import "WLCityModelProtected.h"
-#import "WLJSONToObjectMapper.h"
 
 #import <YYModel/YYModel.h>
 
