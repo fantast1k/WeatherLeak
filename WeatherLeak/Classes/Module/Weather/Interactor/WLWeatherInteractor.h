@@ -7,8 +7,20 @@
 //
 
 #import "WLInteractor.h"
+#import "WLWeatherPresenterIO.h"
+
+#import <WeatherLeakCore/WeatherLeakCore.h>
 
 
-@interface WLWeatherInteractor : WLInteractor
+@interface WLWeatherInteractor : WLInteractor<WLWeatherPresenterInput>
 
+@property (nonatomic, strong) WLNetwork *network;
+
+- (instancetype)initWithCity:(WLCityModel *)city;
+
+@end
+
+
+@interface WLWeatherInteractor (Deprecated)
+- (instancetype)init NS_UNAVAILABLE;
 @end

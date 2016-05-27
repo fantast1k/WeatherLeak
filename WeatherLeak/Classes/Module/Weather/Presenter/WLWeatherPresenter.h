@@ -7,10 +7,11 @@
 //
 
 #import "WLPresenter.h"
+#import "WLWeatherPresenterIO.h"
 
 #import <WeatherLeakView/WeatherLeakView.h>
 
 
-@interface WLWeatherPresenter : WLPresenter<WLWeatherInput>
+@interface WLWeatherPresenter : WLPresenter<WLWeatherInput, WLWeatherPresenterOutput>
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WLModuleFactory.h"
 
 #import <WeatherLeakView/WeatherLeakView.h>
 
@@ -18,10 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIViewController *vc = [WLViewControllerFactory citiesViewControllerWithInput:[NSObject new]];
-
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = vc;
+    self.window.rootViewController = [WLModuleFactory weatherWireframe].viewController;
     [self.window makeKeyAndVisible];
 
     return YES;

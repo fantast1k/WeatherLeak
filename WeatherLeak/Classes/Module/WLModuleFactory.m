@@ -22,7 +22,7 @@
 
 + (WLWeatherWireframe *)weatherWireframe
 {
-    WLWeatherInteractor *interactor = [[WLWeatherInteractor alloc] init];
+    WLWeatherInteractor *interactor = [[WLWeatherInteractor alloc] initWithCity:[NSObject new]];
     WLWeatherPresenter *presenter = [[WLWeatherPresenter alloc] init];
     WLWeatherWireframe *wireframe = [[WLWeatherWireframe alloc] init];
 
@@ -32,6 +32,7 @@
     presenter.interactor = interactor;
 
     wireframe.viewController = viewController;
+    wireframe.presenter = presenter;
 
     interactor.presenter = presenter;
 
