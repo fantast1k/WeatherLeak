@@ -10,4 +10,5 @@ end
 
 target 'WeatherLeakCore' do
     pod 'AFNetworking'
+    pod 'Mantle'
 end

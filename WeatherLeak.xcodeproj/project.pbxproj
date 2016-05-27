@@ -373,6 +373,7 @@
 		1225C5E21CF7AFA000280F76 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				12D7A53F1CF7E5A8002F6696 /* AddCity */,
 				1225C5E31CF7AFA000280F76 /* Weather */,
 				1225C5FD1CF7B32500280F76 /* WLModuleFactory.h */,
 				1225C5FE1CF7B32500280F76 /* WLModuleFactory.m */,
@@ -453,6 +454,37 @@
 				12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		12D7A53F1CF7E5A8002F6696 /* AddCity */ = {
+			isa = PBXGroup;
+			children = (
+				12D7A5401CF7E5A8002F6696 /* Interactor */,
+				12D7A5411CF7E5A8002F6696 /* Presenter */,
+				12D7A5421CF7E5A8002F6696 /* Wireframe */,
+			);
+			path = AddCity;
+			sourceTree = "<group>";
+		};
+		12D7A5401CF7E5A8002F6696 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		12D7A5411CF7E5A8002F6696 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		12D7A5421CF7E5A8002F6696 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		569C99C8DD5ACC95B6677275 /* Pods */ = {
