@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 #import "WLNetworkConfiguration.h"
+#import "WLNetworkClientProtocol.h"
 
 
-@interface WLNetwork : NSObject
+@interface WLNetwork : NSObject<WLNetworkClientProtocol>
 
 - (instancetype)initWithConfiguration:(WLNetworkConfiguration *)config;
 

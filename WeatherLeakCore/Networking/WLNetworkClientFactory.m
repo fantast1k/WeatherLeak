@@ -19,6 +19,7 @@
 
     NSURL *url = [NSURL URLWithString:@"http://api.openweathermap.org/data/"];
     WLOpenWeatherMapClient *client = [[WLOpenWeatherMapClient alloc] initWithBaseURL:url];
+
     [client setApiKey:key];
 
     return client;
