@@ -49,6 +49,7 @@
 		12D7A5381CF7D81F002F6696 /* WLBootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7A5371CF7D81F002F6696 /* WLBootstrap.m */; };
 		12D7A53B1CF7D97E002F6696 /* NetworkConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */; };
 		96487FBB92C070C64F95DC15 /* libPods-WeatherLeakView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */; };
+		9A3E52BF8F5FC268852D1A23 /* libPods-WeatherLeak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38644469E02B8D24BAB31416 /* libPods-WeatherLeak.a */; };
 		E14A0E30F50E24A9A91CE407 /* libPods-WeatherLeakCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D86934CA583D4E174C8D7E /* libPods-WeatherLeakCore.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063D8BAEFA5E35A504E00875 /* Pods-WeatherLeak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeak/Pods-WeatherLeak.debug.xcconfig"; sourceTree = "<group>"; };
+		06C0FAF5D0CB3D8E478105D3 /* Pods-WeatherLeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeak/Pods-WeatherLeak.release.xcconfig"; sourceTree = "<group>"; };
 		11FFE0C2B4F738C1D49BE816 /* Pods-WeatherLeakView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakView/Pods-WeatherLeakView.release.xcconfig"; sourceTree = "<group>"; };
 		121DC3521CF7B90A005932FD /* WeatherLeakCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherLeakCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		121DC35E1CF7B93B005932FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,8 +136,10 @@
 		12D7A5361CF7D81F002F6696 /* WLBootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBootstrap.h; sourceTree = "<group>"; };
 		12D7A5371CF7D81F002F6696 /* WLBootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBootstrap.m; sourceTree = "<group>"; };
 		12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkConfiguration.plist; sourceTree = "<group>"; };
+		12D7A5431CF7EC98002F6696 /* libMantle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMantle.a; path = "../../../../Library/Developer/Xcode/DerivedData/WeatherLeak-ajvcutkugvlilvgnvxfocijijtdn/Build/Products/Debug-iphonesimulator/libMantle.a"; sourceTree = "<group>"; };
 		20D86934CA583D4E174C8D7E /* libPods-WeatherLeakCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherLeakCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E3D29F5F4D9ECBAD1DF60D /* Pods-WeatherLeakView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakView/Pods-WeatherLeakView.debug.xcconfig"; sourceTree = "<group>"; };
+		38644469E02B8D24BAB31416 /* libPods-WeatherLeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherLeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherLeakView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64528845FD6DB6CD93C8A17 /* Pods-WeatherLeakCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakCore/Pods-WeatherLeakCore.release.xcconfig"; sourceTree = "<group>"; };
 		F9B748B23A57A6B0BBA8AF06 /* Pods-WeatherLeakCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherLeakCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherLeakCore/Pods-WeatherLeakCore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 			files = (
 				121DC3641CF7B94A005932FD /* WeatherLeakCore.framework in Frameworks */,
 				1225C5A81CF78FBB00280F76 /* WeatherLeakView.framework in Frameworks */,
+				9A3E52BF8F5FC268852D1A23 /* libPods-WeatherLeak.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +500,8 @@
 				11FFE0C2B4F738C1D49BE816 /* Pods-WeatherLeakView.release.xcconfig */,
 				F9B748B23A57A6B0BBA8AF06 /* Pods-WeatherLeakCore.debug.xcconfig */,
 				E64528845FD6DB6CD93C8A17 /* Pods-WeatherLeakCore.release.xcconfig */,
+				063D8BAEFA5E35A504E00875 /* Pods-WeatherLeak.debug.xcconfig */,
+				06C0FAF5D0CB3D8E478105D3 /* Pods-WeatherLeak.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -501,8 +509,10 @@
 		734CFEE3C6C683F8C8544A5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				12D7A5431CF7EC98002F6696 /* libMantle.a */,
 				D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */,
 				20D86934CA583D4E174C8D7E /* libPods-WeatherLeakCore.a */,
+				38644469E02B8D24BAB31416 /* libPods-WeatherLeak.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -565,9 +575,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1225C5961CF78ED100280F76 /* Build configuration list for PBXNativeTarget "WeatherLeak" */;
 			buildPhases = (
+				3BA241DF9DC55113430062F1 /* Check Pods Manifest.lock */,
 				1225C57B1CF78ED100280F76 /* Sources */,
 				1225C57C1CF78ED100280F76 /* Frameworks */,
 				1225C57D1CF78ED100280F76 /* Resources */,
+				230314DEAFC0F51D10D4A0F8 /* Embed Pods Frameworks */,
+				7A4BC9C4ECF3A204E148A2C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -670,7 +683,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		230314DEAFC0F51D10D4A0F8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherLeak/Pods-WeatherLeak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2FEC99189322FA686776360D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BA241DF9DC55113430062F1 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -713,6 +756,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4BC9C4ECF3A204E148A2C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherLeak/Pods-WeatherLeak-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC396F31F4A4B364EF367366 /* Copy Pods Resources */ = {
@@ -814,6 +872,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9B748B23A57A6B0BBA8AF06 /* Pods-WeatherLeakCore.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -839,6 +898,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E64528845FD6DB6CD93C8A17 /* Pods-WeatherLeakCore.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -944,6 +1004,7 @@
 		};
 		1225C5971CF78ED100280F76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063D8BAEFA5E35A504E00875 /* Pods-WeatherLeak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WeatherLeak/Supporting Files/Info.plist";
@@ -955,6 +1016,7 @@
 		};
 		1225C5981CF78ED100280F76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C0FAF5D0CB3D8E478105D3 /* Pods-WeatherLeak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WeatherLeak/Supporting Files/Info.plist";
