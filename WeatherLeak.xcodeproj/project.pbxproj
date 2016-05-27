@@ -29,7 +29,6 @@
 		1225C5B21CF7907E00280F76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5AF1CF7907E00280F76 /* main.m */; };
 		1225C5C01CF7908600280F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1225C5B61CF7908600280F76 /* Assets.xcassets */; };
 		1225C5C41CF7908600280F76 /* WeatherLeakView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5BD1CF7908600280F76 /* WeatherLeakView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1225C5CA1CF7913000280F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1225C5C61CF7913000280F76 /* LaunchScreen.storyboard */; };
 		1225C5CB1CF7913000280F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1225C5C81CF7913000280F76 /* Main.storyboard */; };
 		1225C5D21CF795AC00280F76 /* WLCitiesListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225C5D01CF795AC00280F76 /* WLCitiesListVC.h */; };
 		1225C5D31CF795AC00280F76 /* WLCitiesListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5D11CF795AC00280F76 /* WLCitiesListVC.m */; };
@@ -50,6 +49,9 @@
 		129BEFDC1CF80358001DCA32 /* WLViewFrameworkLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 129BEFDA1CF80358001DCA32 /* WLViewFrameworkLoader.m */; };
 		129BEFDF1CF80372001DCA32 /* UIImage+WLBundledImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 129BEFDD1CF80372001DCA32 /* UIImage+WLBundledImage.h */; };
 		129BEFE01CF80372001DCA32 /* UIImage+WLBundledImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 129BEFDE1CF80372001DCA32 /* UIImage+WLBundledImage.m */; };
+		129BEFE71CF8085D001DCA32 /* WLLoadVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 129BEFE51CF8085D001DCA32 /* WLLoadVC.h */; };
+		129BEFE81CF8085D001DCA32 /* WLLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 129BEFE61CF8085D001DCA32 /* WLLoadVC.m */; };
+		129BEFEB1CF80C10001DCA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129BEFEA1CF80C10001DCA32 /* LaunchScreen.storyboard */; };
 		12D7A5381CF7D81F002F6696 /* WLBootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7A5371CF7D81F002F6696 /* WLBootstrap.m */; };
 		12D7A53B1CF7D97E002F6696 /* NetworkConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */; };
 		96487FBB92C070C64F95DC15 /* libPods-WeatherLeakView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */; };
@@ -110,7 +112,6 @@
 		1225C5B61CF7908600280F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1225C5BC1CF7908600280F76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1225C5BD1CF7908600280F76 /* WeatherLeakView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLeakView.h; sourceTree = "<group>"; };
-		1225C5C71CF7913000280F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1225C5C91CF7913000280F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1225C5D01CF795AC00280F76 /* WLCitiesListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCitiesListVC.h; sourceTree = "<group>"; };
 		1225C5D11CF795AC00280F76 /* WLCitiesListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCitiesListVC.m; sourceTree = "<group>"; };
@@ -141,6 +142,9 @@
 		129BEFDA1CF80358001DCA32 /* WLViewFrameworkLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLViewFrameworkLoader.m; sourceTree = "<group>"; };
 		129BEFDD1CF80372001DCA32 /* UIImage+WLBundledImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WLBundledImage.h"; sourceTree = "<group>"; };
 		129BEFDE1CF80372001DCA32 /* UIImage+WLBundledImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WLBundledImage.m"; sourceTree = "<group>"; };
+		129BEFE51CF8085D001DCA32 /* WLLoadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoadVC.h; sourceTree = "<group>"; };
+		129BEFE61CF8085D001DCA32 /* WLLoadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoadVC.m; sourceTree = "<group>"; };
+		129BEFEA1CF80C10001DCA32 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D7A5361CF7D81F002F6696 /* WLBootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBootstrap.h; sourceTree = "<group>"; };
 		12D7A5371CF7D81F002F6696 /* WLBootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBootstrap.m; sourceTree = "<group>"; };
 		12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkConfiguration.plist; sourceTree = "<group>"; };
@@ -272,6 +276,7 @@
 		1225C5811CF78ED100280F76 /* WeatherLeak */ = {
 			isa = PBXGroup;
 			children = (
+				129BEFE91CF80BF2001DCA32 /* Launch Screen */,
 				12D7A5391CF7D82F002F6696 /* Config */,
 				1225C5A91CF7907E00280F76 /* Classes */,
 				1225C5AD1CF7907E00280F76 /* Supporting Files */,
@@ -366,6 +371,8 @@
 				1225C5DC1CF7A0A100280F76 /* WLWeatherVC.h */,
 				1225C5DD1CF7A0A100280F76 /* WLWeatherVC.m */,
 				1225C5E01CF7A0D300280F76 /* WLWeatherIO.h */,
+				129BEFE51CF8085D001DCA32 /* WLLoadVC.h */,
+				129BEFE61CF8085D001DCA32 /* WLLoadVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -380,7 +387,6 @@
 		1225C5C51CF7913000280F76 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				1225C5C61CF7913000280F76 /* LaunchScreen.storyboard */,
 				1225C5C81CF7913000280F76 /* Main.storyboard */,
 			);
 			path = Interface;
@@ -471,6 +477,14 @@
 				129BEFDA1CF80358001DCA32 /* WLViewFrameworkLoader.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		129BEFE91CF80BF2001DCA32 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				129BEFEA1CF80C10001DCA32 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
 		12D7A5351CF7D80B002F6696 /* Bootstrap */ = {
@@ -568,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1225C5D71CF7960600280F76 /* WLViewControllerFactory.h in Headers */,
+				129BEFE71CF8085D001DCA32 /* WLLoadVC.h in Headers */,
 				1225C5C41CF7908600280F76 /* WeatherLeakView.h in Headers */,
 				1225C5D91CF7962D00280F76 /* WLCitiesListIO.h in Headers */,
 				1225C5DE1CF7A0A100280F76 /* WLWeatherVC.h in Headers */,
@@ -697,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12D7A53B1CF7D97E002F6696 /* NetworkConfiguration.plist in Resources */,
+				129BEFEB1CF80C10001DCA32 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +720,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1225C5CA1CF7913000280F76 /* LaunchScreen.storyboard in Resources */,
 				1225C5C01CF7908600280F76 /* Assets.xcassets in Resources */,
 				1225C5CB1CF7913000280F76 /* Main.storyboard in Resources */,
 			);
@@ -862,6 +877,7 @@
 				129BEFDC1CF80358001DCA32 /* WLViewFrameworkLoader.m in Sources */,
 				1225C5DF1CF7A0A100280F76 /* WLWeatherVC.m in Sources */,
 				1225C5D31CF795AC00280F76 /* WLCitiesListVC.m in Sources */,
+				129BEFE81CF8085D001DCA32 /* WLLoadVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,14 +897,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1225C5C61CF7913000280F76 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1225C5C71CF7913000280F76 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		1225C5C81CF7913000280F76 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -904,7 +912,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9B748B23A57A6B0BBA8AF06 /* Pods-WeatherLeakCore.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -930,7 +938,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E64528845FD6DB6CD93C8A17 /* Pods-WeatherLeakCore.release.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
