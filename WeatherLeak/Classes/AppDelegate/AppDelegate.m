@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "WLModuleFactory.h"
 
-#import <WeatherLeakView/WeatherLeakView.h>
 
 @interface AppDelegate ()
 
