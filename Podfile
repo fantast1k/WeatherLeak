@@ -7,3 +7,7 @@ end
 target 'WeatherLeakView' do
     pod 'Masonry'
 end
+
+target 'WeatherLeakCore' do
+    pod 'AFNetworking'
+end
