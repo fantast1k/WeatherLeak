@@ -8,6 +8,7 @@
 
 #import "WLCityModel.h"
 
+
 @implementation WLCityModel
 
 - (instancetype)initWithLat:(double)lat lon:(double)lon

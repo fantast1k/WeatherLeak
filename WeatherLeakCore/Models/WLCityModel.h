@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface WLCityModel : NSObject
 
 @property (nonatomic, assign, readonly) double latitude;
