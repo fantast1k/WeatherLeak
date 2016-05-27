@@ -7,7 +7,7 @@
 //
 
 #import "WLCityModel.h"
-
+#import "WLCityModelProtected.h"
 
 @implementation WLCityModel
 

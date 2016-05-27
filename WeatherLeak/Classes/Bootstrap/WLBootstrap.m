@@ -39,7 +39,10 @@
 - (WLNetworkConfiguration *)networkConfiguration
 {
     if (_netConfig == nil) {
-//        NSDictionary *params = [
+        NSString *configPath = [[NSBundle mainBundle] pathForResource:@"NetworkConfiguration" ofType:@"plist"];
+        NSDictionary *params = [NSDictionary dictionaryWithContentsOfFile:configPath];
+        _netConfig = [[WLNetworkConfiguration alloc] init];
+        [_netConfig setOpenWeatherApiKey:params[@"OPEN_WEATHER_MAP_API_KEY"]];
     }
     return _netConfig;
 }

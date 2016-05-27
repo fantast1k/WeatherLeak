@@ -10,10 +10,9 @@
 #import "WLWireframeProtected.h"
 #import "WLPresenterProtected.h"
 #import "WLInteractorProtected.h"
-// Presenters
+#import "WLInteractorFactory.h"
+
 #import "WLWeatherPresenter.h"
-// Interactors
-#import "WLWeatherInteractor.h"
 
 #import <WeatherLeakView/WeatherLeakView.h>
 
@@ -22,7 +21,7 @@
 
 + (WLWeatherWireframe *)weatherWireframe
 {
-    WLWeatherInteractor *interactor = [[WLWeatherInteractor alloc] initWithCity:[NSObject new]];
+    WLWeatherInteractor *interactor = [WLInteractorFactory weatherInteractor];
     WLWeatherPresenter *presenter = [[WLWeatherPresenter alloc] init];
     WLWeatherWireframe *wireframe = [[WLWeatherWireframe alloc] init];
 

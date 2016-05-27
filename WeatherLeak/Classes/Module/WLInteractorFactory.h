@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import "WLWeatherInteractor.h"
+
+
 @interface WLInteractorFactory : NSObject
+
++ (WLWeatherInteractor *)weatherInteractor;
 
 @end

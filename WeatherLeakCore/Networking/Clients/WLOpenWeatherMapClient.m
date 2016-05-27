@@ -14,7 +14,10 @@ static NSString const *ClientAppIdParam = @"APPID";
 
 @implementation WLOpenWeatherMapClient
 
-- (BOOL)getCurrentForecastForCity:(WLCityModel *)city completion:(void (^)(WLWeatherCurrentForecast *, NSError *))completion
+#pragma mark - WLNetworkClientProtocol
+
+- (BOOL)getCurrentForecastForCity:(WLCityModel *)city
+                       completion:(void (^)(WLWeatherCurrentForecast *forecast, NSError *err))completion;
 {
     assert(city);
 
@@ -24,6 +27,10 @@ static NSString const *ClientAppIdParam = @"APPID";
     if (city.cityId) {
         part = @"weather";
         params = @{@"id" : city.cityId, ClientAppIdParam : self.apiKey};
+    }
+    else if (city.latitude || city.longitude) {
+        part = @"weather";
+        params = @{@"lat" : @(city.latitude), @"lon" : @(city.longitude), ClientAppIdParam : self.apiKey};
     }
 
 
