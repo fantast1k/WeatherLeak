@@ -10,4 +10,10 @@
 
 @implementation WLWeatherVC
 
+- (void)viewDidLoad
+{
+    self.view.backgroundColor = [UIColor greenColor];
+    [super viewDidLoad];
+}
+
 @end
