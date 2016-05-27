@@ -46,6 +46,10 @@
 		1225C5F91CF7B30B00280F76 /* WLWeatherInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5F81CF7B30B00280F76 /* WLWeatherInteractor.m */; };
 		1225C5FC1CF7B31800280F76 /* WLWeatherPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5FB1CF7B31800280F76 /* WLWeatherPresenter.m */; };
 		1225C5FF1CF7B32500280F76 /* WLModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225C5FE1CF7B32500280F76 /* WLModuleFactory.m */; };
+		129BEFDB1CF80358001DCA32 /* WLViewFrameworkLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 129BEFD91CF80358001DCA32 /* WLViewFrameworkLoader.h */; };
+		129BEFDC1CF80358001DCA32 /* WLViewFrameworkLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 129BEFDA1CF80358001DCA32 /* WLViewFrameworkLoader.m */; };
+		129BEFDF1CF80372001DCA32 /* UIImage+WLBundledImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 129BEFDD1CF80372001DCA32 /* UIImage+WLBundledImage.h */; };
+		129BEFE01CF80372001DCA32 /* UIImage+WLBundledImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 129BEFDE1CF80372001DCA32 /* UIImage+WLBundledImage.m */; };
 		12D7A5381CF7D81F002F6696 /* WLBootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7A5371CF7D81F002F6696 /* WLBootstrap.m */; };
 		12D7A53B1CF7D97E002F6696 /* NetworkConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */; };
 		96487FBB92C070C64F95DC15 /* libPods-WeatherLeakView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92A0C0E61A9375ACA622266 /* libPods-WeatherLeakView.a */; };
@@ -133,6 +137,10 @@
 		1225C5FB1CF7B31800280F76 /* WLWeatherPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWeatherPresenter.m; sourceTree = "<group>"; };
 		1225C5FD1CF7B32500280F76 /* WLModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLModuleFactory.h; sourceTree = "<group>"; };
 		1225C5FE1CF7B32500280F76 /* WLModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLModuleFactory.m; sourceTree = "<group>"; };
+		129BEFD91CF80358001DCA32 /* WLViewFrameworkLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLViewFrameworkLoader.h; sourceTree = "<group>"; };
+		129BEFDA1CF80358001DCA32 /* WLViewFrameworkLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLViewFrameworkLoader.m; sourceTree = "<group>"; };
+		129BEFDD1CF80372001DCA32 /* UIImage+WLBundledImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WLBundledImage.h"; sourceTree = "<group>"; };
+		129BEFDE1CF80372001DCA32 /* UIImage+WLBundledImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WLBundledImage.m"; sourceTree = "<group>"; };
 		12D7A5361CF7D81F002F6696 /* WLBootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBootstrap.h; sourceTree = "<group>"; };
 		12D7A5371CF7D81F002F6696 /* WLBootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBootstrap.m; sourceTree = "<group>"; };
 		12D7A53A1CF7D97E002F6696 /* NetworkConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkConfiguration.plist; sourceTree = "<group>"; };
@@ -274,6 +282,8 @@
 		1225C59F1CF78FAA00280F76 /* WeatherLeakView */ = {
 			isa = PBXGroup;
 			children = (
+				129BEFD71CF8034C001DCA32 /* Categories */,
+				129BEFD81CF8034C001DCA32 /* Util */,
 				1225C5B31CF7908600280F76 /* Cells */,
 				1225C5B41CF7908600280F76 /* Factory */,
 				1225C5B51CF7908600280F76 /* Resources */,
@@ -445,6 +455,24 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		129BEFD71CF8034C001DCA32 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				129BEFDD1CF80372001DCA32 /* UIImage+WLBundledImage.h */,
+				129BEFDE1CF80372001DCA32 /* UIImage+WLBundledImage.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		129BEFD81CF8034C001DCA32 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				129BEFD91CF80358001DCA32 /* WLViewFrameworkLoader.h */,
+				129BEFDA1CF80358001DCA32 /* WLViewFrameworkLoader.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		12D7A5351CF7D80B002F6696 /* Bootstrap */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +572,8 @@
 				1225C5D91CF7962D00280F76 /* WLCitiesListIO.h in Headers */,
 				1225C5DE1CF7A0A100280F76 /* WLWeatherVC.h in Headers */,
 				1225C5E11CF7AC6200280F76 /* WLWeatherIO.h in Headers */,
+				129BEFDB1CF80358001DCA32 /* WLViewFrameworkLoader.h in Headers */,
+				129BEFDF1CF80372001DCA32 /* UIImage+WLBundledImage.h in Headers */,
 				1225C5D21CF795AC00280F76 /* WLCitiesListVC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -827,7 +857,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129BEFE01CF80372001DCA32 /* UIImage+WLBundledImage.m in Sources */,
 				1225C5D81CF7960600280F76 /* WLViewControllerFactory.m in Sources */,
+				129BEFDC1CF80358001DCA32 /* WLViewFrameworkLoader.m in Sources */,
 				1225C5DF1CF7A0A100280F76 /* WLWeatherVC.m in Sources */,
 				1225C5D31CF795AC00280F76 /* WLCitiesListVC.m in Sources */,
 			);
