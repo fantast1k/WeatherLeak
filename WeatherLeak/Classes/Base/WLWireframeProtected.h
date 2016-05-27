@@ -7,10 +7,12 @@
 //
 
 #import "WLWireframe.h"
+#import "WLPresenter.h"
 
 
 @interface WLWireframe()
 
-@property (nonatomic, weak) UIViewController *viewController;
+@property (nonatomic, strong) UIViewController *viewController;
+@property (nonatomic, strong) WLPresenter *presenter;
 
 @end

@@ -11,6 +11,6 @@
 
 @interface WLCitiesListVC : UIViewController<WLCitiesListOutput>
 
-@property (nonatomic, strong) id<WLCitiesListInput> input;
+@property (nonatomic, weak) id<WLCitiesListInput> input;
 
 @end

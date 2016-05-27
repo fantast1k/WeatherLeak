@@ -12,7 +12,7 @@
 
 @interface WLPresenter ()
 
-@property (nonatomic, strong) WLWireframe *wireframe;
+@property (nonatomic, weak) WLWireframe *wireframe;
 @property (nonatomic, strong) WLInteractor *interactor;
 
 @end

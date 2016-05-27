@@ -7,6 +7,7 @@
 //
 
 #import "WLPresenter.h"
+#import "WLPresenterProtected.h"
 
 
 @implementation WLPresenter

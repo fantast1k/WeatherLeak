@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 
 
+@class WLPresenter;
+
 @interface WLWireframe : NSObject
 
-@property (nonatomic, readonly, weak) UIViewController *viewController;
+@property (nonatomic, readonly, strong) UIViewController *viewController;
+@property (nonatomic, readonly, strong) WLPresenter *presenter;
 
 @end

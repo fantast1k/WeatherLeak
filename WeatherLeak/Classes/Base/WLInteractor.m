@@ -7,6 +7,7 @@
 //
 
 #import "WLInteractor.h"
+#import "WLInteractorProtected.h"
 
 
 @implementation WLInteractor

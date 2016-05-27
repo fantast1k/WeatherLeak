@@ -15,7 +15,7 @@
 
 @interface WLPresenter : NSObject
 
-@property (nonatomic, strong, readonly) WLWireframe *wireframe;
+@property (nonatomic, weak, readonly) WLWireframe *wireframe;
 @property (nonatomic, strong, readonly) WLInteractor *interactor;
 
 @end

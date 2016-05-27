@@ -12,6 +12,6 @@
 
 @interface WLWeatherVC : UIViewController<WLWeatherOutput>
 
-@property (nonatomic, strong) id<WLWeatherInput> input;
+@property (nonatomic, weak) id<WLWeatherInput> input;
 
 @end

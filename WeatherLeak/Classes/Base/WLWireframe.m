@@ -7,6 +7,7 @@
 //
 
 #import "WLWireframe.h"
+#import "WLWireframeProtected.h"
 
 
 @implementation WLWireframe
