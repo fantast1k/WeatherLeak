@@ -17,7 +17,7 @@
 {
     assert(key.length);
 
-    NSURL *url = [NSURL URLWithString:@"http://api.openweathermap.org/data/"];
+    NSURL *url = [NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/"];
     WLOpenWeatherMapClient *client = [[WLOpenWeatherMapClient alloc] initWithBaseURL:url];
 
     [client setApiKey:key];
